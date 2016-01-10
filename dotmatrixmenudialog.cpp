@@ -17,7 +17,6 @@
 #include "dotmatrixstring.h"
 #include "fileio.h"
 #include "testtimer.h"
-#include "richelbilderbeekprogram.h"
 #include "trace.h"
 #pragma GCC diagnostic pop
 
@@ -126,8 +125,8 @@ ribi::About ribi::DotMatrixMenuDialog::GetAbout() const noexcept
     "Richel Bilderbeek",
     "DotMatrix",
     "generates a dot matrix font",
-    "the 11th of October 2013",
-    "2013-2015",
+    "January 10th 2016",
+    "2013-2016",
     "http://www.richelbilderbeek.nl/ToolDotMatrix.htm",
     GetVersion(),
     GetVersionHistory());
@@ -159,16 +158,9 @@ ribi::Help ribi::DotMatrixMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::DotMatrixMenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const ribi::Program> p(new ProgramDotMatrix);
-  assert(p);
-  return p;
-}
-
 std::string ribi::DotMatrixMenuDialog::GetVersion() const noexcept
 {
-  return "2.2";
+  return "3.0";
 }
 
 std::vector<std::string> ribi::DotMatrixMenuDialog::GetVersionHistory() const noexcept
@@ -176,8 +168,9 @@ std::vector<std::string> ribi::DotMatrixMenuDialog::GetVersionHistory() const no
   return {
     "2009-xx-xx: version 1.0: initial VCL desktop version",
     "2013-10-11: version 2.0: port to Qt",
-    "2013-11-01: version 2.1: improved console version"
-    "2014-02-10: version 2.2: added multi-line version"
+    "2013-11-01: version 2.1: improved console version",
+    "2014-02-10: version 2.2: added multi-line version",
+    "2016-01-10: version 3.0: moved to own GitHub",
   };
 }
 

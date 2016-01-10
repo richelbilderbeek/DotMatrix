@@ -1,4 +1,3 @@
-
 #include <string>
 #include <vector>
 
@@ -16,5 +15,4 @@ int main(int argc, char* argv[])
   ribi::DotMatrixMenuDialog d;
   const std::vector<std::string> args { ribi::MenuDialog::ConvertArguments(argc,argv) };
   return d.Execute(args);
-
 }

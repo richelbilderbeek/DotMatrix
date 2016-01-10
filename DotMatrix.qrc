@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/DotMatrix/images">
+        <file>DotMatrixWelcome.png</file>
+    </qresource>
+</RCC>

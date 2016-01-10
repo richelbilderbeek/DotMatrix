@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>245</width>
-    <height>300</height>
+    <width>326</width>
+    <height>507</height>
    </rect>
   </property>
   <property name="font">
@@ -27,6 +27,19 @@ QPushButton { color: rgb(0,0,0); }
 QPushButton { font: 48px  }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="DotMatrix.qrc">:/DotMatrix/images/DotMatrixWelcome.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
    <item>
     <widget class="QPushButton" name="button_start_single_line">
      <property name="text">
@@ -69,6 +82,8 @@ QPushButton { font: 48px  }</string>
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="DotMatrix.qrc"/>
+ </resources>
  <connections/>
 </ui>
