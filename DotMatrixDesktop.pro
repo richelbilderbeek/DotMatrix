@@ -11,3 +11,10 @@ include(../RibiClasses/CppQtDotMatrix/CppQtDotMatrix.pri)
 include(DotMatrixDesktop.pri)
 
 SOURCES += qtmain.cpp
+
+# QResources give this error
+QMAKE_CXXFLAGS += -Wno-unused-variable
+
+# gcov
+QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
+LIBS += -lgcov
