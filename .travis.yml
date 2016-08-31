@@ -7,6 +7,7 @@ before_install:
   - sudo apt-add-repository -y ppa:sonkun/sfml-development
   - sudo pip install codecov
   - sudo apt-get update -qq
+  - ./install_oclint.sh
 
 addons:
   apt:
@@ -30,6 +31,7 @@ script:
   - ./build_desktop.sh
   - ./get_code_cov.sh
   - codecov
+  - ./do_oclint.sh
 
 after_success: 
   - bash <(curl -s https://codecov.io/bash)
