@@ -4,9 +4,9 @@ include(../RibiLibraries/GeneralConsole.pri)
 include(../RibiLibraries/GeneralDesktop.pri)
 
 include(../RibiClasses/CppContainer/CppContainer.pri)
-include(CppDotMatrix.pri)
+include(DotMatrix.pri)
 include(../RibiClasses/CppFuzzy_equal_to/CppFuzzy_equal_to.pri)
-include(CppQtDotMatrix.pri)
+include(QtDotMatrix.pri)
 
 include(DotMatrixDesktop.pri)
 

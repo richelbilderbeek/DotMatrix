@@ -27,8 +27,14 @@ before_script:
   - ./download_other_githubs.sh
 
 script: 
-  - ./build_console.sh
-  - ./build_desktop.sh
+  - qmake DotMatrixConsole.pro
+  - make
+  - ./DotMatrixConsole
+  - qmake DotMatrixDesktop.pro
+  - make
+  - ./DotMatrixDesktop &
+  - sleep 10
+  - sudo killall -9 DotMatrixDesktop
   - ./get_code_cov.sh
   - codecov
   - ./do_oclint.sh

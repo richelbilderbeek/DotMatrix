@@ -4,7 +4,7 @@ include(../RibiLibraries/GeneralConsole.pri)
 
 #Specific, console
 include(../RibiClasses/CppContainer/CppContainer.pri)
-include(CppDotMatrix.pri)
+include(DotMatrix.pri)
 include(../RibiClasses/CppFuzzy_equal_to/CppFuzzy_equal_to.pri)
 include(../DotMatrix/DotMatrixConsole.pri)
 
