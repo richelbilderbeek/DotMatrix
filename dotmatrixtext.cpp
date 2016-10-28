@@ -11,8 +11,8 @@
 #include <QImage>
 
 #include "dotmatrixchar.h"
-#include "testtimer.h"
-#include "trace.h"
+
+
 #pragma GCC diagnostic pop
 
 ribi::DotMatrixText::DotMatrixText(
@@ -139,19 +139,6 @@ std::vector<std::string> ribi::DotMatrixText::GetVersionHistory() noexcept
     "2014-02-27: Version 1.1: started versioning"
   };
 }
-
-#ifndef NDEBUG
-void ribi::DotMatrixText::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif
-
 
 std::ostream& ribi::operator<<(std::ostream& os, const DotMatrixText& m) noexcept
 {

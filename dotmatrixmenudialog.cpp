@@ -16,8 +16,8 @@
 #include "container.h"
 #include "dotmatrixstring.h"
 #include "fileio.h"
-#include "testtimer.h"
-#include "trace.h"
+
+
 #pragma GCC diagnostic pop
 
 ribi::DotMatrixMenuDialog::DotMatrixMenuDialog()
@@ -125,16 +125,14 @@ ribi::About ribi::DotMatrixMenuDialog::GetAbout() const noexcept
     "Richel Bilderbeek",
     "DotMatrix",
     "generates a dot matrix font",
-    "January 10th 2016",
+    "October 28th 2016",
     "2013-2016",
     "http://www.richelbilderbeek.nl/ToolDotMatrix.htm",
     GetVersion(),
-    GetVersionHistory());
-  //a.AddLibrary("Canvas version: " + Canvas::GetVersion());
+    GetVersionHistory()
+  );
   a.AddLibrary("Container version: " + Container().GetVersion());
   a.AddLibrary("FileIo version: " + fileio::FileIo().GetVersion());
-  a.AddLibrary("TestTimer version: " + TestTimer::GetVersion());
-  a.AddLibrary("Trace version: " + Trace::GetVersion());
   return a;
 }
 
@@ -160,7 +158,7 @@ ribi::Help ribi::DotMatrixMenuDialog::GetHelp() const noexcept
 
 std::string ribi::DotMatrixMenuDialog::GetVersion() const noexcept
 {
-  return "3.0";
+  return "3.1";
 }
 
 std::vector<std::string> ribi::DotMatrixMenuDialog::GetVersionHistory() const noexcept
@@ -171,6 +169,7 @@ std::vector<std::string> ribi::DotMatrixMenuDialog::GetVersionHistory() const no
     "2013-11-01: version 2.1: improved console version",
     "2014-02-10: version 2.2: added multi-line version",
     "2016-01-10: version 3.0: moved to own GitHub",
+    "2016-10-28: version 3.1: added Travis CI"
   };
 }
 
@@ -189,9 +188,6 @@ void ribi::DotMatrixMenuDialog::Test() noexcept
       new DotMatrixString("",0)
     };
   }
-
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-
   //Command line tests
   {
     DotMatrixMenuDialog d;

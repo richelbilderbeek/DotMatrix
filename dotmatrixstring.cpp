@@ -1,15 +1,13 @@
 #include "dotmatrixstring.h"
 
+#include <sstream>
+
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
 #pragma GCC diagnostic ignored "-Wunused-local-typedefs"
 #pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
-
 #include <QImage>
-
 #include "dotmatrixchar.h"
-#include "testtimer.h"
-#include "trace.h"
 #pragma GCC diagnostic pop
 
 ribi::DotMatrixString::DotMatrixString(const std::string& s,
@@ -72,10 +70,6 @@ bool ribi::DotMatrixString::GetMatrix(const int x, const int y) const noexcept
   assert(x >= 0);
   assert(x < GetMatrixWidth());
   assert(y >= 0);
-  if (!(y < GetMatrixHeight()))
-  {
-    TRACE("BREAK");
-  }
   assert(y < GetMatrixHeight());
   assert(!m_v.empty());
   assert(m_v[0]);
@@ -131,7 +125,6 @@ void ribi::DotMatrixString::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
   const std::string text = "Hello world";
   const int spacing = 1;
   const boost::shared_ptr<const ribi::DotMatrixString> m {

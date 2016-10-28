@@ -56,10 +56,6 @@ struct DotMatrixChar
   ///size 5 (width) x 7 (height) pixels, excluding empty spacer pixels
   ///size 6 (width) x 8 (height) pixels, including empty spacer pixels
   static boost::array<boost::array<int,5> ,7> GetChar(const char c) noexcept;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 std::ostream& operator<<(std::ostream& os, const DotMatrixChar& m);
