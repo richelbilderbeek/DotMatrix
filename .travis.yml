@@ -33,10 +33,10 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script: 
-  - qmake DotMatrixConsole.pro -qt=qt5 
+  - qmake -qt=qt5 DotMatrixConsole.pro 
   - make
   - ./DotMatrixConsole -t "Hello world"
-  - qmake DotMatrixDesktop.pro -qt=qt5 
+  - qmake -qt=qt5 DotMatrixDesktop.pro
   - make
   - ./DotMatrixDesktop &
   - sleep 10
