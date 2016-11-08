@@ -26,6 +26,8 @@ install:
   - sudo pip install codecov
   # OCLint
   - ./install_oclint.sh
+  # Other GitHubs
+  - ./download_other_githubs.sh
 
 script: 
   # Build and run console
