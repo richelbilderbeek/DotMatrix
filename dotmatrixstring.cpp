@@ -15,9 +15,6 @@ ribi::DotMatrixString::DotMatrixString(const std::string& s,
   : m_spacing(spacing),
     m_v{CreateDotMatrixChars(s)}
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   assert(m_spacing >= 0);
   assert(GetString() == s);
 }
@@ -117,14 +114,8 @@ std::vector<std::string> ribi::DotMatrixString::GetVersionHistory() noexcept
   };
 }
 
-#ifndef NDEBUG
-void ribi::DotMatrixString::Test() noexcept
+void ribi::TestDotMatrixString() noexcept
 {
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
   const std::string text = "Hello world";
   const int spacing = 1;
   const boost::shared_ptr<const ribi::DotMatrixString> m {
@@ -134,7 +125,6 @@ void ribi::DotMatrixString::Test() noexcept
   s << *m;
   assert(!s.str().empty());
 }
-#endif
 
 std::ostream& ribi::operator<<(std::ostream& os, const DotMatrixString& m) noexcept
 {

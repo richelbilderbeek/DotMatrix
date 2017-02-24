@@ -47,10 +47,9 @@ struct DotMatrixString
   static std::vector<boost::shared_ptr<const DotMatrixChar>>
     CreateDotMatrixChars(const std::string& s) noexcept;
 
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
+
+void TestDotMatrixString() noexcept;
 
 std::ostream& operator<<(std::ostream& os, const DotMatrixString& m) noexcept;
 
