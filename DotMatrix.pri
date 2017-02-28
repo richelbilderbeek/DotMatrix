@@ -1,4 +1,4 @@
-INCLUDEPATH += ../DotMatrix
+INCLUDEPATH += $$PWD
 
 SOURCES += \
     $$PWD/dotmatrixchar.cpp \
