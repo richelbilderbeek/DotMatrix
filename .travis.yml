@@ -43,11 +43,11 @@ services:
 script: 
   # Build and run console
   - qmake -qt=qt5 DotMatrixConsole.pro 
-  - make
+  - make --silent
   - ./DotMatrixConsole -t "Hello world"
   # Build and run desktop
   - qmake -qt=qt5 DotMatrixDesktop.pro
-  - make
+  - make --silent
   - ./DotMatrixDesktop &
   - sleep 10
   - sudo killall -9 DotMatrixDesktop
