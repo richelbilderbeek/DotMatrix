@@ -1,3 +1,16 @@
+
+
+# C++14
+CONFIG += c++14
+QMAKE_CXXFLAGS += -std=c++14
+
+# All errors
+QMAKE_CXXFLAGS += -Wall -Wextra -Werror
+
+QT       += core gui
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets svg
+CONFIG += debug_and_release
+
 include(../RibiLibraries/DesktopApplicationNoWeffcpp.pri)
 include(../RibiLibraries/Boost.pri)
 include(../RibiLibraries/GeneralConsole.pri)
