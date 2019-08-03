@@ -1,6 +1,6 @@
 #include "dotmatrixchar.h"
 
-#pragma GCC diagnostic push
+
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-#pragma GCC diagnostic pop
+
 
 ribi::DotMatrixChar::DotMatrixChar(const char c)
   : m_c(c),

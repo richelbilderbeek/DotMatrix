@@ -5,14 +5,14 @@
 #include <string>
 #include <vector>
 
-#pragma GCC diagnostic push
+
 
 
 
 #include <boost/array.hpp>
 #include <boost/checked_delete.hpp>
 #include <boost/shared_ptr.hpp>
-#pragma GCC diagnostic pop
+
 
 struct QImage;
 

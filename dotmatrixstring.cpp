@@ -2,13 +2,13 @@
 
 #include <sstream>
 
-#pragma GCC diagnostic push
+
 
 
 
 #include <QImage>
 #include "dotmatrixchar.h"
-#pragma GCC diagnostic pop
+
 
 ribi::DotMatrixString::DotMatrixString(const std::string& s,
   const int spacing)

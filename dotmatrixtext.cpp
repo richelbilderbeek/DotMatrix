@@ -1,6 +1,6 @@
 #include "dotmatrixtext.h"
 
-#pragma GCC diagnostic push
+
 
 
 
@@ -13,7 +13,7 @@
 #include "dotmatrixchar.h"
 
 
-#pragma GCC diagnostic pop
+
 
 ribi::DotMatrixText::DotMatrixText(
   const std::vector<std::string>& s,

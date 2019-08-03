@@ -1,14 +1,14 @@
 #include <string>
 #include <vector>
 
-#pragma GCC diagnostic push
+
 
 
 #include <boost/shared_ptr.hpp>
 #include <boost/lexical_cast.hpp>
 #include "dotmatrixmenudialog.h"
 
-#pragma GCC diagnostic pop
+
 
 int main(int argc, char* argv[])
 {

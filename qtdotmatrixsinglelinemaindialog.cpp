@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 #include "qtdotmatrixsinglelinemaindialog.h"
@@ -10,7 +10,7 @@
 #include "testtimer.h"
 #include "trace.h"
 #include "ui_qtdotmatrixsinglelinemaindialog.h"
-#pragma GCC diagnostic pop
+
 
 ribi::QtDotMatrixSingleLineMainDialog::QtDotMatrixSingleLineMainDialog(QWidget *parent)
   : QtHideAndShowDialog(parent),

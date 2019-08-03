@@ -1,5 +1,5 @@
 /*
-#pragma GCC diagnostic push
+
 
 
 #include "qtdotmatrixstring.h"
@@ -11,7 +11,7 @@
 #include <QRgb>
 
 #include "dotmatrixstring.h"
-#pragma GCC diagnostic pop
+
 
 ribi::QtDotMatrixString::QtDotMatrixString(const std::string& s,
   const int spacing)

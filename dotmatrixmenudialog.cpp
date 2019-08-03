@@ -5,7 +5,7 @@
 #include <iterator>
 #include <sstream>
 
-#pragma GCC diagnostic push
+
 
 
 #include <boost/shared_ptr.hpp>
@@ -18,7 +18,7 @@
 #include "fileio.h"
 
 
-#pragma GCC diagnostic pop
+
 
 ribi::DotMatrixMenuDialog::DotMatrixMenuDialog()
 {

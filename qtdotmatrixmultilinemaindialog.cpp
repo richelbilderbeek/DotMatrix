@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 #include "qtdotmatrixmultilinemaindialog.h"
@@ -14,7 +14,7 @@
 #include "trace.h"
 
 #include "ui_qtdotmatrixmultilinemaindialog.h"
-#pragma GCC diagnostic pop
+
 
 ribi::QtDotMatrixMultiLineMainDialog::QtDotMatrixMultiLineMainDialog(QWidget *parent)
   : QtHideAndShowDialog(parent),

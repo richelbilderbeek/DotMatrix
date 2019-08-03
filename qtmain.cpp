@@ -1,9 +1,9 @@
-#pragma GCC diagnostic push
+
 
 
 #include "qtdotmatrixmenudialog.h"
 #include <QApplication>
-#pragma GCC diagnostic pop
+
 
 int main(int argc, char *argv[])
 {

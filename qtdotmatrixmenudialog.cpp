@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 #include "qtdotmatrixmenudialog.h"
@@ -14,7 +14,7 @@
 #include "testtimer.h"
 #include "trace.h"
 #include "ui_qtdotmatrixmenudialog.h"
-#pragma GCC diagnostic pop
+
 
 ribi::QtDotMatrixMenuDialog::QtDotMatrixMenuDialog(
   QWidget *parent)
