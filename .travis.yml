@@ -31,8 +31,8 @@ script:
   - sleep 10
   - sudo killall -9 DotMatrixDesktop
   # Get code coverage
-  - ./get_code_cov.sh
-  - codecov
+  - ./get_code_cov.sh >/dev/null
+  - codecov >/dev/null
   # Call OCLint
   - ./do_oclint.sh
 
