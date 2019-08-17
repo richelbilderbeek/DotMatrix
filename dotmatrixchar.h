@@ -5,12 +5,7 @@
 #include <string>
 #include <vector>
 
-
-
-
-
 #include <boost/array.hpp>
-#include <boost/checked_delete.hpp>
 #include <boost/shared_ptr.hpp>
 
 
@@ -41,9 +36,7 @@ struct DotMatrixChar
   static std::vector<std::string> GetVersionHistory() noexcept;
 
   private:
-  ~DotMatrixChar() noexcept {}
-  friend void boost::checked_delete<>(      DotMatrixChar*);
-  friend void boost::checked_delete<>(const DotMatrixChar*);
+
   ///The character
   const char m_c;
 

@@ -3,13 +3,7 @@
 
 #include <string>
 #include <vector>
-
-
-
-
-
-#include <boost/shared_ptr.hpp>
-
+#include <memory>
 
 struct QImage;
 
@@ -25,9 +19,10 @@ struct DotMatrixText
   DotMatrixText(
     const std::vector<std::string>& s,
     const int spacing,
-    const ColorSystem color_system = ColorSystem::normal);
+    const ColorSystem color_system = ColorSystem::normal
+  );
 
-  boost::shared_ptr<QImage> CreateImage() const noexcept;
+  QImage CreateImage() const noexcept;
 
   ///Read back the string
   std::vector<std::string> GetText() const noexcept;
@@ -41,15 +36,12 @@ struct DotMatrixText
   ///Get the matrix width
   int GetMatrixWidth() const noexcept;
 
-  static std::string GetVersion() noexcept;
-  static std::vector<std::string> GetVersionHistory() noexcept;
-
   private:
   const ColorSystem m_color_system;
   const int m_spacing;
-  const std::vector<boost::shared_ptr<const DotMatrixString>> m_v;
+  const std::vector<DotMatrixString> m_v;
 
-  static std::vector<boost::shared_ptr<const DotMatrixString>>
+  static std::vector<DotMatrixString>
     CreateDotMatrixText(const std::vector<std::string>& s, const int spacing) noexcept;
 };
 

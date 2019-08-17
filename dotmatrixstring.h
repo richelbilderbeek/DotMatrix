@@ -4,13 +4,6 @@
 #include <string>
 #include <vector>
 
-
-
-
-
-#include <boost/shared_ptr.hpp>
-
-
 struct QImage;
 
 namespace ribi {
@@ -23,7 +16,7 @@ struct DotMatrixString
   ///Give it a std::string and a spacing (number of pixels) between the characters
   DotMatrixString(const std::string& s = "", const int spacing = 0);
 
-  boost::shared_ptr<QImage> CreateImage() const noexcept;
+  QImage CreateImage() const noexcept;
 
   ///Read back the string
   std::string GetString() const noexcept;
@@ -42,9 +35,9 @@ struct DotMatrixString
 
   private:
   const int m_spacing;
-  const std::vector<boost::shared_ptr<const DotMatrixChar>> m_v;
+  const std::vector<DotMatrixChar> m_v;
 
-  static std::vector<boost::shared_ptr<const DotMatrixChar>>
+  static std::vector<DotMatrixChar>
     CreateDotMatrixChars(const std::string& s) noexcept;
 
 };
