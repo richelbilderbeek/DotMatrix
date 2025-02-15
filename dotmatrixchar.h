@@ -41,7 +41,7 @@ struct DotMatrixChar
   static std::vector<std::string> GetVersionHistory() noexcept;
 
   private:
-  ~DotMatrixChar() noexcept {}
+  //~DotMatrixChar() noexcept {}
   friend void boost::checked_delete<>(      DotMatrixChar*);
   friend void boost::checked_delete<>(const DotMatrixChar*);
   ///The character

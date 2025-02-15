@@ -35,7 +35,7 @@ std::vector<boost::shared_ptr<const ribi::DotMatrixString>>
   ) noexcept
 {
   std::vector<boost::shared_ptr<const DotMatrixString>> v;
-  for (const std::string line: text)
+  for (const std::string& line: text)
   {
     boost::shared_ptr<const DotMatrixString> s {
       new DotMatrixString(line,spacing)
@@ -148,7 +148,7 @@ std::ostream& ribi::operator<<(std::ostream& os, const DotMatrixText& m) noexcep
   {
     for (int x=0; x!=width; ++x)
     {
-      os << m.GetMatrix(x,y);
+      os << m.GetMatrix(x, y);
     }
     if (y + 1 != height) os << '\n';
   }
