@@ -1,5 +1,7 @@
 # DotMatrix
 
+[Go to the nicely rendered website](https://richelbilderbeek.github.io/DotMatrix/).
+
 Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.com)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
 ---|---|---
 master|[![Build Status](https://travis-ci.com/richelbilderbeek/DotMatrix.svg?branch=master)](https://travis-ci.com/richelbilderbeek/DotMatrix)|[![codecov.io](https://codecov.io/github/richelbilderbeek/DotMatrix/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/DotMatrix/branch/master)

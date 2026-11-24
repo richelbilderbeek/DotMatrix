@@ -34,3 +34,5 @@ object_script*
 release/
 ui_*
 *.pro.user.*
+
+site/
