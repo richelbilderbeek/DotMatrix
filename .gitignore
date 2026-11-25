@@ -36,3 +36,7 @@ ui_*
 *.pro.user.*
 
 site/
+
+wordlist.dic
+
+coverage/
