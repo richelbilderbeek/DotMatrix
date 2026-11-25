@@ -7,7 +7,6 @@
 #include <QPainter>
 
 #include "dotmatrixstring.h"
-#include "testtimer.h"
 #include "trace.h"
 #include "ui_qtdotmatrixsinglelinemaindialog.h"
 
@@ -46,7 +45,6 @@ void ribi::QtDotMatrixSingleLineMainDialog::Test() noexcept
   {
 
   }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
   QtDotMatrixSingleLineMainDialog d;
   d.on_text_textChanged("Hello world");
 }

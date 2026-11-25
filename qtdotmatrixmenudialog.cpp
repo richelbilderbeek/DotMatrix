@@ -11,7 +11,6 @@
 #include "qtdotmatrixsinglelinemaindialog.h"
 #include "qtdotmatrixmultilinemaindialog.h"
 #include "qthideandshowdialog.h"
-#include "testtimer.h"
 #include "trace.h"
 #include "ui_qtdotmatrixmenudialog.h"
 
@@ -63,7 +62,6 @@ void ribi::QtDotMatrixMenuDialog::Test() noexcept
   DotMatrixMenuDialog();
   QtDotMatrixSingleLineMainDialog();
   QtDotMatrixMultiLineMainDialog();
-  const TestTimer test_timer(__func__,__FILE__,1.0);
 }
 #endif
 
