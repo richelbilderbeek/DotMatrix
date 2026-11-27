@@ -1,11 +1,8 @@
 # DotMatrix
 
-[Go to the nicely rendered website](https://richelbilderbeek.github.io/DotMatrix/).
+[![Codecov](https://codecov.io/gh/richelbilderbeek/DotMatrix/branch/main/graph/badge.svg)](https://codecov.io/gh/richelbilderbeek/DotMatrix)
 
-Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.com)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
----|---|---
-master|[![Build Status](https://travis-ci.com/richelbilderbeek/DotMatrix.svg?branch=master)](https://travis-ci.com/richelbilderbeek/DotMatrix)|[![codecov.io](https://codecov.io/github/richelbilderbeek/DotMatrix/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/DotMatrix/branch/master)
-develop|[![Build Status](https://travis-ci.com/richelbilderbeek/DotMatrix.svg?branch=develop)](https://travis-ci.com/richelbilderbeek/DotMatrix)|[![codecov.io](https://codecov.io/github/richelbilderbeek/DotMatrix/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/DotMatrix/branch/develop)
+[Go to the nicely rendered website](https://richelbilderbeek.github.io/DotMatrix/).
 
 Tool to generate a dot-matrix font, written in C++ using Qt.
 
